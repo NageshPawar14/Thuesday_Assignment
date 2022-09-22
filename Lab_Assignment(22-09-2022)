@@ -1,1 +1,23 @@
+//WAP to accept a number from user and check if a given number is palindrome or not.
+import java.util.*;
+
+class Thusday_Assignment {
+    public static void main(String args[]) {
+        int num, reversnum = 0, remainder;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your no.:");
+        num = sc.nextInt();
+        int originalnum = num;
+        while (num != 0) {
+            remainder = num % 10;
+            reversnum = reversnum * 10 + remainder;
+            num /= 10;
+        }
+        if (originalnum == reversnum) {
+            System.out.println(originalnum + " is Palindrom no.");
+        } else {
+            System.out.println(originalnum + " is not Palindrom .");
+        }
+    }
+}
 
