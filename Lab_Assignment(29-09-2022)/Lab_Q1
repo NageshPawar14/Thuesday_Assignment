@@ -1,0 +1,35 @@
+//WAP to accept a number from user and then prints the sum of the even and odd integers.
+import java.util.*;
+public class Thursday_Assignment4 {
+
+     public static void main(String args[]) {
+        int num1,evensum=0,oddsum=0;
+        char ans;
+        Scanner sc = new Scanner(System.in);
+       
+        do {
+
+            System.out.println("Enter a number");
+            num1=sc.nextInt();
+            if(num1%2==0)
+            {
+               
+                evensum+=num1;
+                
+            }
+            else
+            {
+                oddsum+=num1;
+                
+            }
+           System.out.println("Even no."+evensum);
+           System.out.println("Odd no."+oddsum);
+            System.out.println("Do you want to add number. y/n");
+            ans=sc.next().charAt(0);
+            }
+            while(ans=='y'||ans=='n'); 
+            
+}
+
+}
+
